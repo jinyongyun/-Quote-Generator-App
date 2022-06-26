@@ -1,8 +1,8 @@
 # -Quote-Generator-App
 ios기초1 : 명언을 출력하는 기본적인 앱
 
-### 사용기술1
-UIKit<br>
+### 사용기술
+# UIKit<br>
 <br>
 Cocoa touch Framework<br>
 코코아 터치 프레임워크란 ios 개발 환경을 구축하기 위한 최상위 프레임워크<br>
@@ -30,3 +30,26 @@ M은 model V는 view C는 controller를 뜻한다.<br>
 이를 해결하기 위해 MVVM 등의 패턴을 사용할 수 있다.<br>
 <br>
 
+
+# UIView
+UIView는 화면의 직사각면 영역에 대한 내용을 관리하는 객체이다.
+UIView는 위치와 크기를 갖고 있는 사각형 영역으로 배경색을 가지고 있고, 또 문자나 이미지 등의 컨텐츠를 갖는 것이 가능하다.
+UIImageView UILabel UIControl UITextField UIScrollView UIButton UISlider UISwitch UITextField의 부모이다.
+그래서 UIView는 여러 UI component를 보여주는 용도로 사용한다.
+
+# ViewController
+앱의 근간을 이루는 객체로 모든 앱은 최소 하나 이상의 뷰 컨트롤러를 갖고 있다.
+한마디로 사용자가 화면을 보는 것에 대한 관리 기능을 제공하는 녀석
+-데이터 변화에 따라 view 컨텐츠를 업데이트 한다
+- view 들과 함께 사용자 상호작용에 대한 응답을 한다
+- view 들을 리사이징하고 전체적인 인터페이스의 레이아웃(규격)을 관리한다
+- 다른 뷰 컨트롤러 들과 함께 앱을 구성한다.
+화면 하나를 관리하는 단위
+
+# autoLayout
+두 뷰의 관계(크기와 위치)를 제약 조건(Constraints)를 이용해 정하는 것
+다양한 해상도 비율에 대응하기 위해 나온 것
+아이폰의 크기가 다양해지며 해상도가 다양해져서, 서로 다른 해상도라도 같은 화면을 보여주기 위해 나옴
+가로보기 화면과 세로보기 화면을 지원한다
+autoLayout을 이용한 화면 구성은 xcode 스토리보드에서 진행
+정렬도 가능하다
