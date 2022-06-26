@@ -53,3 +53,27 @@ UIImageView UILabel UIControl UITextField UIScrollView UIButton UISlider UISwitc
 가로보기 화면과 세로보기 화면을 지원한다
 autoLayout을 이용한 화면 구성은 xcode 스토리보드에서 진행
 정렬도 가능하다
+
+
+## 작동방식
+Quote 구조체에 명언과 이름 상수를 생성하고
+이 구조체를 담을 배열을 만들어 명언을 지정할 것이다.
+스토리보드에 명언과 이름을 담을 두 라벨을 지정하고 이를 각각 뷰 컨트롤러에 연결해 
+버튼을 눌렀을 때 액션 함수에서 랜덤하게 명언 배열에 접근하여 이를 출력하도록 할 것이다.
+
+## 오류처리
+![스크린샷 2022-06-26 오후 1 46 02](https://user-images.githubusercontent.com/102133961/175801159-7903f997-62e5-4a4b-a4d7-c1dd410b4a0d.jpg)<br>
+![스크린샷 2022-06-26 오후 1 46 07](https://user-images.githubusercontent.com/102133961/175801171-3236a8fe-288a-4a2c-a0b9-c6686fe640e8.jpg)
+<br>
+quoteLabel과 nameLabel의 Layout을 설정하는 과정에서 quoteLabel의 규격이 맞지 않아 발생했던 오류였다.<br>
+따라서 quoteLabel의 ContentHugging을 통해 우선순위를 낮춰서 레이아웃에 맞도록 사이즈를 바꿔주었다.<br>
+또 quoteLabel의 문자열이 많더라도 그중 일부가 생략이 되고, nameLabel은 살아있도록 Compression Resistance에서 Vertical 우선순위를 더 높게 해주어 사이즈가 변하지 않게 해주었다<br>
+
+
+### 완성본
+![스크린샷 2022-06-26 오후 2 39 10](https://user-images.githubusercontent.com/102133961/175801297-8b4198d3-da56-47e1-a747-c237f8aaf1ba.jpg)<br>
+![스크린샷 2022-06-26 오후 2 39 19](https://user-images.githubusercontent.com/102133961/175801299-fd2c61f9-6204-403d-866d-b968ca7a36b5.jpg)<br>
+심심하지 않게 아이콘도 제작하였다<br>
+![스크린샷 2022-06-26 오후 2 39 22](https://user-images.githubusercontent.com/102133961/175801300-8e4a70b5-7793-410f-ac4c-7f60367b9887.jpg)<br>
+
+
