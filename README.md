@@ -1,5 +1,5 @@
 # -Quote-Generator-App
-ios기초1 : 명언을 출력하는 기본적인 앱
+명언을 출력하는 기본적인 앱
 
 ### 사용기술
 # UIKit<br>
